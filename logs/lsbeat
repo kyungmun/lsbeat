@@ -1,0 +1,45 @@
+2016-11-22T14:59:03+09:00 INFO Setup Beat: lsbeat; Version: 6.0.0-alpha1
+2016-11-22T14:59:03+09:00 INFO Loading template enabled. Reading template file: /usr/local/elastic5.0/lsbeat/lsbeat.template.json
+2016-11-22T14:59:03+09:00 INFO Loading template enabled for Elasticsearch 2.x. Reading template file: /usr/local/elastic5.0/lsbeat/lsbeat.template-es2x.json
+2016-11-22T14:59:03+09:00 INFO Elasticsearch url: http://10.165.60.66:9200
+2016-11-22T14:59:03+09:00 INFO Activated elasticsearch as output plugin.
+2016-11-22T14:59:03+09:00 INFO Publisher name: dev.prom.cyberone.kr
+2016-11-22T14:59:03+09:00 INFO Flush Interval set to: 1s
+2016-11-22T14:59:03+09:00 INFO Max Bulk Size set to: 50
+2016-11-22T14:59:03+09:00 INFO lsbeat start running.
+2016-11-22T14:59:03+09:00 INFO lsbeat is running! Hit CTRL-C to stop it.
+2016-11-22T14:59:13+09:00 INFO Event sent
+2016-11-22T14:59:14+09:00 INFO Connected to Elasticsearch version 5.0.0
+2016-11-22T14:59:14+09:00 INFO Trying to load template for client: http://10.165.60.66:9200
+2016-11-22T14:59:15+09:00 INFO Elasticsearch template with name 'lsbeat' loaded
+2016-11-22T14:59:23+09:00 INFO Event sent
+2016-11-22T14:59:33+09:00 INFO Non-zero metrics in the last 30s: libbeat.publisher.published_events=26 libbeat.es.call_count.PublishEvents=1 libbeat.es.publish.read_bytes=1070 libbeat.es.publish.write_bytes=11727 libbeat.publisher.messages_in_worker_queues=26 libbeat.es.published_and_acked_events=26
+2016-11-22T14:59:33+09:00 INFO Event sent
+2016-11-22T14:59:43+09:00 INFO Event sent
+2016-11-22T14:59:53+09:00 INFO Event sent
+2016-11-22T15:00:03+09:00 INFO No non-zero metrics in the last 30s
+2016-11-22T15:00:03+09:00 INFO Event sent
+2016-11-22T15:00:13+09:00 INFO Event sent
+2016-11-22T15:00:23+09:00 INFO Event sent
+2016-11-22T15:00:33+09:00 INFO No non-zero metrics in the last 30s
+2016-11-22T15:00:33+09:00 INFO Event sent
+2016-11-22T15:00:43+09:00 INFO Event sent
+2016-11-22T15:00:53+09:00 INFO Event sent
+2016-11-22T15:01:03+09:00 INFO Non-zero metrics in the last 30s: libbeat.es.publish.read_bytes=382 libbeat.es.published_and_acked_events=12 libbeat.es.publish.write_bytes=4674 libbeat.publisher.published_events=12 libbeat.es.call_count.PublishEvents=1 libbeat.publisher.messages_in_worker_queues=12
+2016-11-22T15:01:03+09:00 INFO Event sent
+2016-11-22T15:01:13+09:00 INFO Event sent
+2016-11-22T15:01:23+09:00 INFO Event sent
+2016-11-22T15:01:33+09:00 INFO No non-zero metrics in the last 30s
+2016-11-22T15:01:33+09:00 INFO Event sent
+2016-11-22T15:01:43+09:00 INFO Event sent
+2016-11-22T15:01:53+09:00 INFO Event sent
+2016-11-22T15:02:03+09:00 INFO Non-zero metrics in the last 30s: libbeat.es.published_and_acked_events=8 libbeat.es.call_count.PublishEvents=1 libbeat.publisher.messages_in_worker_queues=8 libbeat.es.publish.write_bytes=3210 libbeat.publisher.published_events=8 libbeat.es.publish.read_bytes=366
+2016-11-22T15:02:03+09:00 INFO Event sent
+2016-11-22T15:02:13+09:00 INFO Event sent
+2016-11-22T15:02:23+09:00 INFO Event sent
+2016-11-22T15:02:33+09:00 INFO No non-zero metrics in the last 30s
+2016-11-22T15:02:33+09:00 INFO Event sent
+2016-11-22T15:02:43+09:00 INFO Event sent
+2016-11-22T15:02:51+09:00 INFO Total non-zero values:  libbeat.publisher.published_events=46 libbeat.es.publish.write_bytes=19611 libbeat.es.published_and_acked_events=46 libbeat.es.publish.read_bytes=1818 libbeat.publisher.messages_in_worker_queues=46 libbeat.es.call_count.PublishEvents=3
+2016-11-22T15:02:51+09:00 INFO Uptime: 3m47.098011811s
+2016-11-22T15:02:51+09:00 INFO lsbeat stopped.
