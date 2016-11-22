@@ -5,7 +5,7 @@
 lsbeat:
   # Defines how often an event is sent to the output
   period: 10s
-  path: "/data/promdata/logstorage/2016-11-22"
+  path: "D:/Download"
 
 #================================ General =====================================
 
