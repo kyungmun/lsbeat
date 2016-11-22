@@ -42,7 +42,7 @@ func (bt *Lsbeat) Run(b *beat.Beat) error {
 
 	bt.client = b.Publisher.Connect()
 	ticker := time.NewTicker(bt.config.Period)
-	counter := 1
+	//counter := 1
 	for {
 		select {
 		case <-bt.done:
@@ -50,17 +50,10 @@ func (bt *Lsbeat) Run(b *beat.Beat) error {
 		case <-ticker.C:
 		}
 
-		//event := common.MapStr{
-		//	"@timestamp": common.Time(time.Now()),
-		//	"type":       b.Name,
-		//	"counter":    counter,
-		//}
-		//bt.client.PublishEvent(event)
-
 		bt.listDir(bt.config.Path, b.Name)
 		bt.lastIndexTime = time.Now()
 		logp.Info("Event sent")
-		counter++
+		//counter++
 	}
 }
 
@@ -78,7 +71,7 @@ func (bt *Lsbeat) listDir(dirFile string, beatname string) {
 	
         if t.After(bt.lastIndexTime) {
             // index all files and directories on init
-		 event := common.MapStr{
+	    event := common.MapStr{
 	            "@timestamp": common.Time(time.Now()),
 	            "type":       beatname,
 	            "modtime":    common.Time(t),
@@ -86,9 +79,9 @@ func (bt *Lsbeat) listDir(dirFile string, beatname string) {
 	            "path":       path,
 	            "directory":  f.IsDir(),
 	            "filesize":   f.Size(),
-	        }
-		logp.Info("Event : %s", event)
-        	//bt.client.PublishEvent(event) 
+	    }
+	    //logp.Info("Event : %s", event)
+            bt.client.PublishEvent(event) 
         }
 
         if f.IsDir() {
