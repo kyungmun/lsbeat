@@ -1,3 +1,5 @@
 *.exe
 *.yml
-\logs
+logs\
+build\
+vendor\
